@@ -40,6 +40,7 @@ The conversion pipeline extracts the underlying NetworkX graph object, converts 
 ----------
 ### Reference
 - [Pomegranate](http://pomegranate.readthedocs.io/)
+- [Hidden Markov Model](https://pomegranate.readthedocs.io/en/latest/HiddenMarkovModel.html#initialization)
 - [Missing Values](https://pomegranate.readthedocs.io/en/latest/nan.html)
 - [NLTK](https://www.nltk.org/)
 - [Tagged Corpora](http://www.nltk.org/book/ch05.html)
