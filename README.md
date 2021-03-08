@@ -8,7 +8,7 @@ This project demonstrates text processing techniques that allow you to build a p
 The conversion pipeline extracts the underlying NetworkX graph object, converts it to a PyDot graph, then writes the PNG data to a bytes array, which can be saved as a file to disk or imported with matplotlib for display.
    > Model -> NetworkX.Graph -> PyDot.Graph -> bytes -> PNG
 
-Parameters
+```Parameters
 ----------
 - model : Pomegranate.Model
         The model object to convert. The model must have an attribute .graph
@@ -24,10 +24,10 @@ Parameters
 - show_ends : bool (optional)
         show_ends=True will generate the PNG including the two end states from
         the Pomegranate model (which are not usually an explicit part of the graph)
-
+```
 
 ### Show Model: Display a Pomegranate model as an image using matplotlib
-Parameters
+```Parameters
 ----------
     - model : Pomegranate.Model
         The model object to convert. The model must have an attribute .graph
@@ -40,7 +40,7 @@ Parameters
     - **kwargs : dict
         The kwargs dict is passed to the model2png program, see that function
         for details
-    """        
+```       
 ### Reference
 - [Pomegranate](http://pomegranate.readthedocs.io/)
 - [Missing Values](https://pomegranate.readthedocs.io/en/latest/nan.html)
