@@ -16,6 +16,7 @@ The conversion pipeline extracts the underlying NetworkX graph object, converts 
 - filename : string (optional)
         The PNG file will be saved to disk with this filename if one is provided.
         By default, the image file will NOT be created if a file with this name already exists unless overwrite=True.
+        
 - overwrite : bool (optional)
         overwrite=True allows the new PNG to overwrite the specified file if it already exists
 
