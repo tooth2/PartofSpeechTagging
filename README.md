@@ -1,10 +1,36 @@
 # Part-of-Speech Tagging
 Part of Speech Tagging Use several techniques, including table lookups, n-grams, and hidden Markov models, to tag parts of speech in sentences, and compare their performance.
 
-
 This project demonstrates text processing techniques that allow you to build a part of speech tagging model. You will work with a simplelookup table, and progressively add more complexity to improve the model using probabilistic graphical models. Ultimately you’ll be using a Python package to build and train a tagger with a hidden Markov model, and you will be able to compare the performances of all these models in a dataset of sentences.
 
-## Model2PNG: Convert a Pomegranate model into a PNG image
+## Hidden Markov Model
+
+## Baseline Tagger
+### pair_counts() function
+Emission count: The emission counts dictionary has 12 keys, one for each of the tags in the universal tagset,
+for example, "time" is the most common word tagged as a NOUN
+
+### MFC tagger
+MFC Tagger produces the expected accuracy using the universal tagset as follows: 
+- >95.5% accuracy on the training sentences
+- 93% accuracy the test sentences
+
+## Calculating Tag Counts
+- unigram_counts()
+- bigram_counts()
+- start_counts()
+- end_counts()
+
+## Basic HMM Tagger 
+### HMM network : Model Topology 
+
+![HMM](_post-hmm.png)
+Basic HMM tagger produces the expected accuracy using the universal tagset as follows: 
+- >97% accuracy on the training sentences
+- >95.5% accuracy the test sentences
+
+## Helper 
+### Model2PNG: Convert a Pomegranate model into a PNG image
 The conversion pipeline extracts the underlying NetworkX graph object, converts it to a PyDot graph, then writes the PNG data to a bytes array, which can be saved as a file to disk or imported with matplotlib for display.
    > Model -> NetworkX.Graph -> PyDot.Graph -> bytes -> PNG
 
