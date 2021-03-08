@@ -9,38 +9,33 @@ The conversion pipeline extracts the underlying NetworkX graph object, converts 
    > Model -> NetworkX.Graph -> PyDot.Graph -> bytes -> PNG
 
 ```Parameters
-----------
 - model : Pomegranate.Model
         The model object to convert. The model must have an attribute .graph
         referencing a NetworkX.Graph instance.
 
 - filename : string (optional)
         The PNG file will be saved to disk with this filename if one is provided.
-        By default, the image file will NOT be created if a file with this name
-        already exists unless overwrite=True.
+        By default, the image file will NOT be created if a file with this name already exists unless overwrite=True.
 - overwrite : bool (optional)
         overwrite=True allows the new PNG to overwrite the specified file if it already exists
 
 - show_ends : bool (optional)
-        show_ends=True will generate the PNG including the two end states from
-        the Pomegranate model (which are not usually an explicit part of the graph)
+        show_ends=True will generate the PNG including the two end states from the Pomegranate model (which are not usually an explicit part of the graph)
 ```
 
 ### Show Model: Display a Pomegranate model as an image using matplotlib
 ```Parameters
-----------
+
     - model : Pomegranate.Model
-        The model object to convert. The model must have an attribute .graph
-        referencing a NetworkX.Graph instance.
+        The model object to convert. The model must have an attribute .graph referencing a NetworkX.Graph instance.
 
     - figsize : tuple(int, int) (optional)
-        A tuple specifying the dimensions of a matplotlib Figure that will
-        display the converted graph
+        A tuple specifying the dimensions of a matplotlib Figure that will display the converted graph
 
     - **kwargs : dict
-        The kwargs dict is passed to the model2png program, see that function
-        for details
-```       
+        The kwargs dict is passed to the model2png program
+```  
+----------
 ### Reference
 - [Pomegranate](http://pomegranate.readthedocs.io/)
 - [Missing Values](https://pomegranate.readthedocs.io/en/latest/nan.html)
