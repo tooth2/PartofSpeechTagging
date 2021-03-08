@@ -20,7 +20,8 @@ The conversion pipeline extracts the underlying NetworkX graph object, converts 
         overwrite=True allows the new PNG to overwrite the specified file if it already exists
 
 - show_ends : bool (optional)
-        show_ends=True will generate the PNG including the two end states from the Pomegranate model (which are not usually an explicit part of the graph)
+        show_ends=True will generate the PNG including the two end states from the Pomegranate 
+        model (which are not usually an explicit part of the graph)
 ```
 
 ### Show Model: Display a Pomegranate model as an image using matplotlib
