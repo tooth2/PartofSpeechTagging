@@ -23,8 +23,8 @@ MFC Tagger produces the expected accuracy using the universal tagset as follows:
 
 ## Basic HMM Tagger 
 ### HMM network : Model Topology 
-
 ![HMM](_post-hmm.png)
+
 Basic HMM tagger produces the expected accuracy using the universal tagset as follows: 
 - >97% accuracy on the training sentences
 - >95.5% accuracy the test sentences
