@@ -63,6 +63,11 @@ The conversion pipeline extracts the underlying NetworkX graph object, converts 
     - **kwargs : dict
         The kwargs dict is passed to the model2png program
 ```  
+
+### Next Step
+- Trying other corpus: nltk.corpus.brown or nltk.corpus.treebank datasets
+- Using pseudocounts or interpolated smoothing to handle missing data
+- Retraining the hidden markov model using Baum-Welch re-estimation (available via the .fit() method in Pomegranate)
 ----------
 ### Reference
 - [Pomegranate](http://pomegranate.readthedocs.io/)
