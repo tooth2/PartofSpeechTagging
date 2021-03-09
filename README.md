@@ -5,23 +5,18 @@ This project demonstrates text processing techniques that allow you to build a p
 
 ## Hidden Markov Model
 
-## Baseline Tagger
-### pair_counts() function
-Emission count: The emission counts dictionary has 12 keys, one for each of the tags in the universal tagset,
-for example, "time" is the most common word tagged as a NOUN
+**HMM Tagger**
+- pair_counts() function
+    - Emission count: The emission counts dictionary has 12 keys, one for each of the tags in the universal tagset, for example, "time" is the most common word tagged as a NOUN
+- MFC tagger: MFC Tagger produces the expected accuracy using the universal tagset as follows: 
+    - >95.5% accuracy on the training sentences
+    - 93% accuracy the test sentences
+- Calculating Tag Counts
+    - unigram_counts()
+    - bigram_counts()
+    - start_counts()
+    - end_counts()
 
-### MFC tagger
-MFC Tagger produces the expected accuracy using the universal tagset as follows: 
-- >95.5% accuracy on the training sentences
-- 93% accuracy the test sentences
-
-## Calculating Tag Counts
-- unigram_counts()
-- bigram_counts()
-- start_counts()
-- end_counts()
-
-## Basic HMM Tagger 
 ### HMM network : Model Topology 
 ![HMM](_post-hmm.png)
 
