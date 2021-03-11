@@ -48,11 +48,8 @@ This project demonstrates text processing techniques that allow you to build a p
 ![HMM](_post-hmm.png)
 
 Basic HMM tagger produces the expected accuracy using the universal tagset as follows: 
-- >97% accuracy on the training sentences
-- >95.5% accuracy the test sentences
-
-- training accuracy basic hmm model: 97.54%
-- testing accuracy basic hmm model: 95.95%
+- >97% accuracy on the training sentences : training accuracy basic hmm model: 97.54%
+- >95.5% accuracy the test sentences : testing accuracy basic hmm model: 95.95%
 
 ## Helper 
 ### Model2PNG: Convert a Pomegranate model into a PNG image
